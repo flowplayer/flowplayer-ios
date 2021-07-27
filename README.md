@@ -17,7 +17,6 @@ Use the package manager [CocoaPods](https://cocoapods.org/) to install Flowplaye
 # PodFile
 pod 'FlowplayerPrototype' # Core version
 pod 'FlowplayerChromecastPrototype'# Chromecast integration (Optional)
-pod 'FlowplayerCore'
 ```
 
 and the run

@@ -2,7 +2,7 @@
 
 The official iOS SDK for Flowplayer.
 
-Documentation can be found [here](https://flowplayer.com/developers/ios-sdk/getting-started)
+Documentation can be found [here](https://flowplayer.com/developers/ios-sdk/getting-started).
 
 # Migration to v2
 
@@ -11,7 +11,7 @@ To create a better user and developer experience while using our SDK, we have re
 ## Installation
 
 **CocoaPods**
-Use the package manager [CocoaPods](https://cocoapods.org/) to install Flowplayer. Please make sure you have removed the old version of Flowplayer before doing
+Use the package manager [CocoaPods](https://cocoapods.org/) to install Flowplayer. Please make sure you have removed the old version of Flowplayer before upgrading to v2.
 
 ```bash
 # PodFile
@@ -34,4 +34,4 @@ Step 4: Add FlowplayerChromecast to project (optional)
 Step 5: Compile and run
 
 ## Usage
-The SDK should behave the same as the previous version. No extra code needed :D
+The SDK should behave the same as the previous version. No extra code needed :D.

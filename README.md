@@ -26,7 +26,7 @@ and the run
 pod install
 ```
 
-**Manual integration**
+**Manual integration**   
 Step 1: Download Flowplayer [here](https://github.com/Denpex/flowplayer-prototype/releases/tag/0.0.1)   
 Step 2: Remove old version of FlowplayerCore   
 Step 3: Add FlowplayerCore to project   

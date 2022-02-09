@@ -1,4 +1,8 @@
-# Migration from v2 to v3
+# Official repository
+
+The official repository of the Flowplayer iOS SDK.
+
+## Migration from v2 to v3
 
 **Module rename**
 
@@ -11,12 +15,6 @@ and should not be _used_ or _imported_.
 import Flowplayer
 ```
 
-**C++ library unlinked**
-
-[Rollbar](https://rollbar.com/error-tracking/ios/) requires the `libc++.tbd` library. This library was previously bundled inside of _Flowplayer SDK_ and would sometimes cause weird behavior and errors when compiled. Because of this it was removed and is now required to be **added by the client**.
-
-![C++ library](images/add-framework.png)
-
 ## __Installation__
 
 ### CocoaPods integration
@@ -24,9 +22,7 @@ Use the package manager [CocoaPods](https://cocoapods.org/) to install Flowplaye
 
 ```bash
 # PodFile
-pod 'Flowplayer', '3.0.0'
-pod 'Rollbar', '1.12.14'
-pod 'GoogleAds-IMA-iOS-SDK', '3.14.4'
+pod 'Flowplayer', '~> 3.0.3'
 ```
 
 and the run
@@ -37,17 +33,15 @@ pod install
 
 ### Manual integration
 
-Step 1: Download Flowplayer [here](https://github.com/flowplayer/flowplayer-ios-sdk-public/releases).
+Step 1: Download Flowplayer [here](https://github.com/flowplayer/flowplayer-ios/releases).
 
 Step 2: Add Flowplayer to project.
 
 Step 3: Add FlowplayerCore to project.
 
-Step 4: Add FlowplayerChromecast to project (OPTIONAL).
+Step 4: Add Flowplayer dependencies [Google IMA](https://developers.google.com/interactive-media-ads/) and [Rollbar](https://rollbar.com/error-tracking/ios/).
 
-Step 5: Add Flowplayer dependencies [Google IMA](https://developers.google.com/interactive-media-ads/) and [Rollbar](https://rollbar.com/error-tracking/ios/).
-
-Step 6: Compile and run.
+Step 5: Compile and run.
 
 ## __Usage__
 

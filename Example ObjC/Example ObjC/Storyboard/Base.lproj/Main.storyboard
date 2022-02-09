@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7Xi-DX-oU6">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Flowplayer-->
+        <scene sceneID="OAM-BI-nqv">
+            <objects>
+                <tableViewController id="sel-kA-Xt6" customClass="MainViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="eHq-pZ-Ndo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell-id" id="Pcl-5v-JkR">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Pcl-5v-JkR" id="hS2-vP-3qz">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="sel-kA-Xt6" id="yDP-XC-hPS"/>
+                            <outlet property="delegate" destination="sel-kA-Xt6" id="gk8-sy-zL8"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Flowplayer" id="tDI-Ny-yJz"/>
+                    <connections>
+                        <segue destination="mB2-zA-9LD" kind="show" identifier="playerControllerSegue" id="Di6-4s-dqu"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DYP-rM-kY4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-212" y="-19"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XVJ-8I-hIe">
+            <objects>
+                <navigationController id="7Xi-DX-oU6" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="M9y-up-6xO">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="sel-kA-Xt6" kind="relationship" relationship="rootViewController" id="15n-Pt-oy4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yfX-bA-JdY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1243" y="-19"/>
+        </scene>
+        <!--Player View Controller-->
+        <scene sceneID="VYc-tT-74b">
+            <objects>
+                <viewController id="mB2-zA-9LD" customClass="PlayerViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6du-4a-M72">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flowplayer rocks!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVT-lZ-s1d">
+                                <rect key="frame" x="17" y="266" width="380" height="30"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P31-gP-viA">
+                                <rect key="frame" x="17" y="328" width="380" height="240"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="380" id="cYb-u2-Ce5"/>
+                                    <constraint firstAttribute="height" constant="240" id="hoO-Vf-7iV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="R0O-tl-qgX"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hVT-lZ-s1d" firstAttribute="leading" secondItem="P31-gP-viA" secondAttribute="leading" id="KhI-CJ-r0y"/>
+                            <constraint firstItem="hVT-lZ-s1d" firstAttribute="trailing" secondItem="P31-gP-viA" secondAttribute="trailing" id="f7g-Xk-5TL"/>
+                            <constraint firstItem="P31-gP-viA" firstAttribute="centerY" secondItem="6du-4a-M72" secondAttribute="centerY" id="lOa-4E-y56"/>
+                            <constraint firstItem="P31-gP-viA" firstAttribute="top" secondItem="hVT-lZ-s1d" secondAttribute="bottom" constant="32" id="r5b-AB-UNr"/>
+                            <constraint firstItem="P31-gP-viA" firstAttribute="centerX" secondItem="6du-4a-M72" secondAttribute="centerX" id="uZb-i3-E1I"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="okT-jT-iJ7"/>
+                    <connections>
+                        <outlet property="containerView" destination="P31-gP-viA" id="BGj-JR-wcq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kb3-Hi-jL0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="675" y="-19"/>
+        </scene>
+    </scenes>
+</document>

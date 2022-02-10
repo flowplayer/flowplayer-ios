@@ -6,8 +6,8 @@ both locally and over the Internet. The Flowplayer iOS SDK uses AVPlayer as its 
 The SDK supports adaptive streaming technologies such as HLS, as well as the most popular single container formats, such as MP4, MP3, AVI, and several more.
 
 
-## Looking for tvOS version?
-If you where looking for the tvOS SDK it's [here](https://github.com/flowplayer/flowplayer-tvos).
+## Looking for the tvOS version?
+You can find the Flowplayer's tvOS SDK [here](https://github.com/flowplayer/flowplayer-tvos).
 
 
 ## Migration from v2 to v3

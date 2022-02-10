@@ -7,7 +7,7 @@ The SDK supports adaptive streaming technologies such as HLS, as well as the mos
 
 
 ## Looking for the tvOS version?
-You can find the Flowplayer's tvOS SDK [here](https://github.com/flowplayer/flowplayer-tvos).
+You can find Flowplayer's tvOS SDK [here](https://github.com/flowplayer/flowplayer-tvos).
 
 
 ## Migration from v2 to v3
